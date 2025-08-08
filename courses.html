@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Courses Offered</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 style="text-align: center; color: #145a32;">🎓 Courses Offered at My College</h1>
+
+  <div class="course-list">
+
+    <div class="course-section" onclick="toggleSubCourses('engg')">
+      <h2>Engineering</h2>
+      <img src="images/engineering.jpg" alt="Engineering" class="course-image">
+      <ul id="engg" class="sub-courses">
+        <li>CSE</li>
+        <li>AIML</li>
+        <li>Civil</li>
+        <li>Electrical</li>
+        <li>Mechanical</li>
+      </ul>
+    </div>
+
+    <div class="course-section" onclick="toggleSubCourses('diploma')">
+      <h2>Diploma</h2>
+      <img src="images/diploma.jpg" alt="Diploma" class="course-image">
+      <ul id="diploma" class="sub-courses">
+        <li>Mechanical</li>
+        <li>Electrical</li>
+        <li>Computer Science</li>
+        <li>Civil</li>
+      </ul>
+    </div>
+
+    <div class="course-section" onclick="toggleSubCourses('pharmacy')">
+      <h2>Pharmacy</h2>
+      <img src="images/pharmacy.jpg" alt="Pharmacy" class="course-image">
+      <ul id="pharmacy" class="sub-courses">
+        <li>B.Pharma</li>
+        <li>D.Pharma</li>
+      </ul>
+    </div>
+
+    <div class="course-section" onclick="toggleSubCourses('dental')">
+      <h2>Dental</h2>
+      <img src="images/dental.jpg" alt="Dental" class="course-image">
+      <ul id="dental" class="sub-courses">
+        <li>BDS</li>
+        <li>Dental Hygienist</li>
+      </ul>
+    </div>
+
+    <div class="course-section" onclick="toggleSubCourses('management')">
+      <h2>Management</h2>
+      <img src="images/management.jpg" alt="Management" class="course-image">
+      <ul id="management" class="sub-courses">
+        <li>BBA</li>
+        <li>MBA</li>
+        <li>Hospital Management</li>
+      </ul>
+    </div>
+
+    <div class="course-section" onclick="toggleSubCourses('iti')">
+      <h2>ITI</h2>
+      <img src="images/iti.jpg" alt="ITI" class="course-image">
+      <ul id="iti" class="sub-courses">
+        <li>Electrician</li>
+        <li>Fitter</li>
+        <li>Welder</li>
+        <li>Mechanic (Motor Vehicle)</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <p style="text-align: center;"><a href="index.html">← Back to Home</a></p>
+
+  <script>
+    function toggleSubCourses(id) {
+      const element = document.getElementById(id);
+      element.style.display = (element.style.display === 'none' || element.style.display === '') ? 'block' : 'none';
+    }
+  </script>
+</body>
+</html>
